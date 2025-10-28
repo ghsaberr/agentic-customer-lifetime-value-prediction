@@ -254,3 +254,85 @@
     "final_LTV_adjusted": 6500.62
   }
 }
+{
+  "timestamp": "2025-10-28T14:57:39.264494",
+  "customer_id": "CUST_00974",
+  "baseline_output": {
+    "predicted_LTV": 6500.624350367991,
+    "uncertainty": 1939.7171912971814,
+    "model_type": "RandomForestRegressor"
+  },
+  "retrieved_docs": [
+    {
+      "doc_id": "DOC_95017DEA",
+      "category": "Home",
+      "subtype": null,
+      "created_date": "2023-12-10 00:00:00",
+      "score": 1.3849189281463623,
+      "text": "This Home policy covers dwelling, personal property and loss-of-use. Coverage limits and exclusions depend on construction type and local hazards. This language was updated to reflect regulatory guidance. This note was generated as part of an automated review process...."
+    },
+    {
+      "doc_id": "DOC_C47C55E5",
+      "category": "Home",
+      "subtype": null,
+      "created_date": "2023-06-25 00:00:00",
+      "score": 1.4066083431243896,
+      "text": "This Home policy covers dwelling, personal property and loss-of-use. Coverage limits and exclusions depend on construction type and local hazards. This language was updated to reflect regulatory guidance. Contact the underwriting team for clarifications on risk assessment...."
+    },
+    {
+      "doc_id": "DOC_20136222",
+      "category": "Home",
+      "subtype": null,
+      "created_date": "2023-03-21 00:00:00",
+      "score": 1.4715394973754883,
+      "text": "This Home policy covers dwelling, personal property and loss-of-use. Coverage limits and exclusions depend on construction type and local hazards. This is a summary and not a full contract; see full policy wording for exclusions. (Revision 1: Updated rates). Contact the underwriting team for clarifi..."
+    }
+  ],
+  "rules_output": [],
+  "agent_output": {
+    "raw_response": "As an insurance LTV reasoning agent, I have reviewed the provided baseline prediction and the retrieved passages. Based on the information provided, I recommend the following adjustments to the predicted LTV:\n\nADJUSTMENT: (-5%) relative to the baseline\n\nREASON:\n\n1. The passages retrieved do not provide any significant new information that would change the baseline prediction. They are mostly updates to language related to regulatory guidance, which does not impact the overall coverage limits and exclusions.\n2. The business rule flags are empty, indicating that there are no additional factors that could affect the LTV estimate.\n3. The model type used in the baseline prediction is a Random Forest Regressor, which is a robust and reliable model for predicting LTV.\n\nACTIONS: No actions are required based on the information provided.\n\nCITATIONS:\n\n* PASSAGE_1\n* PASSAGE_2\n* PASSAGE_3",
+    "adjustment_percent": 5.0,
+    "final_LTV_adjusted": 6825.66
+  }
+}
+{
+  "timestamp": "2025-10-28T15:02:59.312255",
+  "customer_id": "CUST_00974",
+  "baseline_output": {
+    "predicted_LTV": 6500.6243503679925,
+    "uncertainty": 1939.7171912971814,
+    "model_type": "RandomForestRegressor"
+  },
+  "retrieved_docs": [
+    {
+      "doc_id": "DOC_96F023FC",
+      "category": "Home",
+      "subtype": null,
+      "created_date": "2023-12-10 00:00:00",
+      "score": 1.3849189281463623,
+      "text": "This Home policy covers dwelling, personal property and loss-of-use. Coverage limits and exclusions depend on construction type and local hazards. This language was updated to reflect regulatory guidance. This note was generated as part of an automated review process...."
+    },
+    {
+      "doc_id": "DOC_6833D3A8",
+      "category": "Home",
+      "subtype": null,
+      "created_date": "2023-06-25 00:00:00",
+      "score": 1.4066083431243896,
+      "text": "This Home policy covers dwelling, personal property and loss-of-use. Coverage limits and exclusions depend on construction type and local hazards. This language was updated to reflect regulatory guidance. Contact the underwriting team for clarifications on risk assessment...."
+    },
+    {
+      "doc_id": "DOC_69526617",
+      "category": "Home",
+      "subtype": null,
+      "created_date": "2023-03-21 00:00:00",
+      "score": 1.4715394973754883,
+      "text": "This Home policy covers dwelling, personal property and loss-of-use. Coverage limits and exclusions depend on construction type and local hazards. This is a summary and not a full contract; see full policy wording for exclusions. (Revision 1: Updated rates). Contact the underwriting team for clarifi..."
+    }
+  ],
+  "rules_output": [],
+  "agent_output": {
+    "raw_response": "Adjustment: (-5.62%)\nReason:\n\n1. The updated passages provide more specific and detailed information about the policy's coverage limits and exclusions, which can help refine the LTV estimate. For example, Passage 2 mentions that coverage limits and exclusions depend on construction type and local hazards, which is relevant to the policyholder's risk profile.\n2. The passages also indicate that the language was updated to reflect regulatory guidance, which could impact the policy's terms and conditions. This could affect the LTV estimate as it may be necessary to adjust for changes in the policy's coverage or exclusions.\n3. The lack of business rule flags suggests that there are no immediate actions required to update the LTV estimate based on these passages alone. However, it may be necessary to consult with underwriting teams or regulatory experts to fully assess the impact of these updates on the policyholder's risk profile and LTV estimate.\n\nActions: None recommended at this time.\n\nCitations:\n\n* Passage 1: id = DOC_96F023FC_P01\n* Passage 2: id = DOC_6833D3A8_P01\n* Passage 3: id = DOC_69526617_P01",
+    "adjustment_percent": -5.62,
+    "final_LTV_adjusted": 6135.29
+  }
+}
